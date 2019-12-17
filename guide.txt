@@ -1,0 +1,7 @@
+So we want to build and IVR that accepts an inbound call which greets the caller with a main menu.
+The Main Menu will ask the caller to press 1 for more options or press two to hang up. If they press one then they will be asked if they want to be connected to an operator (1) or to hang up (2). 
+
+So esentiall there is MENU ONE -> MENU TWO -> CONNECT 
+
+The first thing I'll need to do is create a post request to a route to handle the firs tincomming call. Then I will need to create functions to play Twiml for each segment of the call. These functions can be called in an if statment insode the POST route. 
+
