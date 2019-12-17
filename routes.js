@@ -70,7 +70,7 @@ const menuTwo = (req, res) => {
 	const twiml = new VoiceResponse();
 
 	if(req.body.Digits == 1) {
-		twiml.dial('14153416915');
+		twiml.dial('PHONENUMBER');
 	}else{
 		twiml.hangup();
 	}
